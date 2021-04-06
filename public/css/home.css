@@ -1,0 +1,136 @@
+:root {
+    --color-background: #ffa366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background);
+    width: 100%;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+/* configuração do dropdown */
+
+#container .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+
+#container .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 8px 5px 8px;
+    cursor: pointer;
+}
+
+#container .menu img {
+    margin-bottom: -3px;
+}
+
+#mainnav ul{
+    list-style: none;
+    background: #0080ff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px 10px 15px;
+}
+
+.dropdown {
+    position:absolute;
+    right: 0;
+    display: none;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.dropdown a:hover {
+    background: #0069D9;
+    transition: .3;
+}
+
+.wrapper-dropdown:hover > .dropdown {
+    display: block;
+}
+
+/* configuração do dropdown */
+
+#container h2 {
+    color: white;
+}
+
+#container .logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .buttons-container .find-help {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background: #0080ff;
+    padding: 12px 40px 15px 40px;
+}
+
+#container .buttons-container .find-help img {
+    margin-bottom: -15px;
+    margin-right: 10px;
+}
+
+#container .buttons-container .find-help:hover {
+    background: #4da6ff;
+    transition: .3;
+}
+
+#container .buttons-container .helping-colleague {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background: #04BF58;
+    padding: 12px 40px 15px 40px;
+    margin-right: 50px;
+}
+
+#container .buttons-container .helping-colleague img {
+    margin-bottom: -15px;
+    margin-right: 10px;
+}
+
+#container .buttons-container .helping-colleague:hover {
+    background: #33cc33;
+    transition: .3;
+}
+
+
+
+
+
+

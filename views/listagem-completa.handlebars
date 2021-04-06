@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/doguinho.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/listagem-completa.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <title>Me Ajuda Aí</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/plataforma.svg" alt="Dog Forte e Dog Fraco">
+        <div class="menu">
+            <nav id="mainnav">
+                <ul class="wrapper-menu">
+                    <li class="wrapper-dropdown">
+                        <a>Menu <img src="./img/arrow-down.svg" alt="seta para baixo"> </a>
+                        <ul class="dropdown">
+                            <li><a href="/">Página Inicial</a></li>
+                            <li><a href="/edit">Editar Dados</a></li>
+                            <li><a href="/delete">Deletar Dados</a></li>
+                            <li><a href="/export">Exportar Dados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="card">
+        <p class="title-card">Lista de Colegas Dispostos a Ajudar</p>
+        <table class="table-list" id="id_da_tabela">
+            <thead>
+                <tr>
+                    <th scope="col">Detalhes</th>
+                    <th>Nome</th>
+                    <th>Curso</th>
+                    <th>Conteúdo</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {{#each colegas}}
+                <tr class="tr-dinamic">
+                    <td><a href="/details/{{_id}}"><button class="btn-detail"><img src="/img/user.svg"></button></a>
+                    </td>
+                    <td>{{nome}}</td>
+                    <td>{{curso}}</td>
+                    <td>{{conteudo}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- js datatables -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="js/datatables.js"></script>
+</body>
+
+</html>

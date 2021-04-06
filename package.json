@@ -1,0 +1,28 @@
+{
+  "name": "sistema_web_me_ajuda_ai",
+  "version": "1.0.0",
+  "description": "Sistema Web de Ajuda para Estudos Online em Conjunto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomeuCamurca/Sistema_Web_Me_Ajuda_Ai.git"
+  },
+  "author": "Romeu Camurça e Silmara Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomeuCamurca/Sistema_Web_Me_Ajuda_Ai/issues"
+  },
+  "homepage": "https://github.com/RomeuCamurca/Sistema_Web_Me_Ajuda_Ai#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mongoose": "^5.12.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

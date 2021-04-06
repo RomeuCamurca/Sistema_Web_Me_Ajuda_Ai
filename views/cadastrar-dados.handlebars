@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/doguinho.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastrar-dados.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <title>Me Ajuda Aí</title>
+</head>
+<body>
+<header>
+    <img src="./img/plataforma.svg" alt="Dog Forte e Dog Fraco">
+    <div class="menu">
+        <nav id="mainnav">
+            <ul class="wrapper-menu">
+                <li class="wrapper-dropdown">
+                    <a>Menu <img src="./img/arrow-down.svg" alt="seta para baixo"> </a>
+                    <ul class="dropdown">
+                        <li><a href="/">Página Inicial</a></li>
+                        <li><a href="/edit">Editar Dados</a></li>
+                        <li><a href="/delete">Deletar Dados</a></li>
+                        <li><a href="/export">Exportar Dados</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="card">
+    <p class="title-card">Seus Dados</p>
+    <form action="/helping-colleague" method="POST">
+        <div class="input-block">
+            <label for="nome">Nome Completo</label>
+            <input name="nome" type="text" id="nome" required>
+        </div>
+
+        <div class="input-block">
+            <label for="curso">Curso</label>
+            <input name="curso" type="text" id="curso" required>
+        </div>
+        <div class="input-block">
+            <label for="foto">Link da sua foto <small>(comece com https://)</small></label>
+            <input name="foto" id="foto" type="url" required>
+        </div>
+
+        <div class="input-block">
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" required>
+        </div>
+
+        <div class="input-block">
+            <label for="whatsapp">Whatsapp <small>(somente números)</small></label>
+            <input name="whatsapp" id="whatsapp" type="number" required>
+        </div>
+
+        <div class="input-block">
+            <label for="conteudo">Em qual conteúdo você deseja ajudar algum colega?</label>
+            <input name="conteudo" type="text" id="conteudo" required>
+        </div>
+
+        <div class="textarea-block">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" placeholder="Uma pequena descrisão sobre você"
+                required></textarea>
+        </div>
+
+        <button type="submit" class="register">Cadastrar</button>
+        <a href="/"><button type="button" class="cancel">Cancelar</button></a>
+
+    </form>
+</div>
+</body>
+</html>

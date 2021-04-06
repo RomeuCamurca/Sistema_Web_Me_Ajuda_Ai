@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/doguinho.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <title>Me Ajuda Aí</title>
+</head>
+
+<body>
+    <header>
+        <img src="/img/plataforma.svg" alt="texto do logotipo da plataforma">
+        <div class="menu">
+            <nav id="mainnav">
+                <ul class="wrapper-menu">
+                    <li class="wrapper-dropdown">
+                        <a>Menu <img src="/img/arrow-down.svg" alt="seta para baixo"> </a>
+                        <ul class="dropdown">
+                            <li><a href="/">Página Inicia</a></li>
+                            <li><a href="/edit">Editar Dados</a></li>
+                            <li><a href="/delete">Deletar Dados</a></li>
+                            <li><a href="/export">Exportar Dados</a></li>
+                            <li><a href="/find-help">Voltar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="card">
+        <p class="title-card">Detalhes</p>
+        <img class="perfil-photo" src="{{colega.foto}}">
+        <h3 class="perfil-name"> <small>Nome Completo: </small> {{colega.nome}} </h3>
+        <h3 class="perfil-content"> <small>Conteúdo: </small> {{colega.conteudo}} </h3>
+        <h3 class="perfil-course"> <small>Curso: </small> {{colega.curso}} </h3>
+        <h3 class="perfil-email"> <small>Email: </small> {{colega.email}} </h3>
+
+        <p class="perfil-description"> <small>Descrição: </small> {{colega.descricao}} </p>
+
+        <a
+            href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{colega.whatsapp}}&text=Tenho interesse na sua ajuda de {{colega.conteudo}} {{colega.nome}}">
+            <button type="button" class="perfil-whatsapp"><img src="/img/whatsapp.svg">Entrar em contato</button>
+        </a>
+    </div>
+</body>
+
+</html>
